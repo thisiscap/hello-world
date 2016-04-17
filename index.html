@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ooo...</title>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Ooo...</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.js"></script>
+	<script type="text/javascript" src="js/jquery.color.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			spectrum();
+			
+			function spectrum(){
+				var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+				$('#welcome').animate( { backgroundColor: hue }, 1000);
+				spectrum(); 
+		   	}
+			
+		});	
+	</script>
+	<style type="text/css">
+	    *{ margin:0; padding:0; }
+	    body { text-align: center; background:#191919; }
+		#welcome{ width: 100vw; height: 100vh; background:#A8D2F5; }
+	</style>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+	<div id="welcome"></div>
+</body>
+</html>
+    
+<!--
+Based on 'It's a Rainbow!' by Sam Dunn
+2009 Build Internet! www.buildinternet.com
+-->

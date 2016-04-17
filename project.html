@@ -1,0 +1,110 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Porter - Home</title>
+    <meta name="description" content="Personal site of graphic designer Chris Porter.">
+    <meta name="keywords" content="brighton, graphic design, chris porter, print, branding, animation, motion, graphics, illustration">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="boilerplate.css" rel="stylesheet" type="text/css">
+    <link href="site.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="animations.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <script src="respond.min.js"></script>
+</head>
+<body bgcolor="#f2f2f2" height="100%">
+    <div class="gridContainer clearfix">
+        <!-- Header start -->
+        <div id="Header">
+            <ul id="Nav" class="NavMenu">
+                <li>
+                    <h2 style="font-weight: 400; text-align: right;"><a href="/info.html">Info</a></h2>
+                </li>
+                <li>
+                    <h2 style="font-weight: 400;"><a href="/feed.html" style="visibility: hidden;">Feed</a></h2>
+                </li>
+                <li>
+                    <h2 style="font-weight: 400; text-decoration:underline; text-align: left;"><a href="/index.html" >Porter</a></h2>
+                </li>
+            </ul>
+        </div>
+        <div id="Content">
+            <a href="#" class="starburst" style="border-bottom: none;">
+                    <span><span><span>
+      <br />New<br />New<br />New
+   </span></span>
+                    </span>
+                </a>
+            <div class="Hero">
+               <script language="javascript" type="text/javascript">
+<!-- Begin
+// Set slideShowSpeed (milliseconds)
+var slideShowSpeed = 3000;
+// Duration of crossfade (seconds)
+var crossFadeDuration = 10;
+// Specify the image files
+var Pic = new Array();
+// to add more images, just continue
+// the pattern, adding to the array below
+
+Pic[0] = 'images/work/bite-merger-ad.jpg'
+Pic[1] = 'images/work/animate.jpg'
+
+// do not edit anything below this line
+var t;
+var j = 0;
+var p = Pic.length;
+var preLoad = new Array();
+for (i = 0; i < p; i++) {
+preLoad[i] = new Image();
+preLoad[i].src = Pic[i];
+}
+function runSlideShow() {
+if (document.all) {
+document.images.SlideShow.style.filter="blendTrans(duration=2)";
+document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)";
+document.images.SlideShow.filters.blendTrans.Apply();
+}
+document.images.SlideShow.src = preLoad[j].src;
+if (document.all) {
+document.images.SlideShow.filters.blendTrans.Play();
+}
+j = j + 1;
+if (j > (p - 1)) j = 0;
+t = setTimeout('runSlideShow()', slideShowSpeed);
+}
+window.onload=runSlideShow;
+//  End -->
+</script>
+<center>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td id="VU" height=auto width=100%>
+<img src="images/work/bite-merger-ad.jpg" name='SlideShow' width=100% height=auto>
+</td>
+</tr>
+</table>
+</center>
+            </div>
+            <div class="Article">
+                <h2 style="padding-left: 20px;">Project title</h2>
+                <p style="padding: 20px;">Small preview of my work. If you're looking for a portfolio <a href="mailto:hello@christopherporter.co.uk">get in touch</a>. An example paragraph about the project.</br>An example paragraph about the project. An example paragraph about the project.</p>
+            </div>
+            <div id="Footer">
+                <p class="Footer">&copy; Chris Porter &#8212; <a href="#Nav">Back to top</a> &uarr;</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
